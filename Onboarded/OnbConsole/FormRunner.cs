@@ -19,20 +19,18 @@ namespace OnbConsole
             return x;
         }
 
-        public Boolean ValidateCnh(CnhForm x)
+        public void ValidateCnh(CnhForm x)
         {
             if (x.Cpf == "23422123-7")
             {
                 SaveCnhDatabase();
                 SaveCnhStorage();
                 Console.WriteLine("CNH validada e registrada com sucesso!");
-                return true;
             }
                 
             else
             {
                 Console.WriteLine("CNH não é valida, repita o processo");
-                return false;
             }
                 
         }

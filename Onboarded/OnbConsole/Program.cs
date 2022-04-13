@@ -3,12 +3,15 @@ using OnbConsole;
 
 Console.WriteLine("Onboarded App");
 
+//filepath of the document to be validated
 const string filepath = @"C:\Users\user\Downloads\outputURN\output\";
+
 var fr = new FormRunner();
 
 var x = fr.ExtractForm(filepath);
-var validCnh = fr.ValidateCnh(x);
-Console.WriteLine("Programa terminado com sucesso");
+fr.ValidateCnh(x);
+
+Console.WriteLine("Programa terminado com sucesso...");
 
 
 
