@@ -8,8 +8,8 @@ namespace OnbConsole
 {
     public class CnhForm
     {
-      public string IdCnh;
-      public string Name;
-      public string Cpf;
+      public string? IdCnh { get; set; }
+        public string? Name { get; set; }
+        public string? Cpf { get; set; }
     }
 }
